@@ -10,7 +10,7 @@ Template and CLI tool to manage a standalone [MkDocs](https://www.mkdocs.org/) d
 In your project folder, clone this project (or fork it first)…
 
 ```
-git clone git@github.com:ppo/docsmk.git docsmk
+git clone git@github.com:ppo/docsmk.git
 ./docsmk/docsmk install
 ```
 
@@ -59,9 +59,11 @@ Usage: docsmk [COMMAND=serve]
 
 1. Move the `.readthedocs.yml` file to the root of your repository. No modifications required.
 2. Import your project via [your dashboard on RTD](https://readthedocs.org/dashboard/).
+3. That's it! The building process starts automatically.
+   Click on “your documentation is building” to follow its progress.
 
 
-#### Known Problem
+**Known Problem:**
 
 If you don't see the projects of an organization in RTD, you've to explicitely grant them access
 to that organization.
@@ -69,7 +71,7 @@ See [Requesting organization approval for OAuth Apps](https://docs.github.com/en
 _([information found here](https://github.com/readthedocs/readthedocs.org/issues/2044#issuecomment-405940573))_
 
 
-#### Documentation
+**Documentation:**
 
 - [Importing Your Documentation](https://docs.readthedocs.io/en/stable/intro/import-guide.html)
 - [Configuration File](https://docs.readthedocs.io/en/stable/config-file/index.html)
