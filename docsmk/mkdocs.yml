@@ -1,0 +1,51 @@
+# Doc: https://www.mkdocs.org/user-guide/configuration/
+
+site_name: "mcBuddy"
+site_description: "The companion you were missing to take care of your macOS installation."
+site_author: "Pascal Polleunus <pascal+github@polleunus.be>"
+repo_url: https://github.com/macos-buddy/mcbuddy
+repo_name: "macos-buddy/mcbuddy"
+extra:
+  version: 0.1
+
+nav:
+  - Home: index.md
+  - Features: features.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Modules: modules.md
+  - How To Create Modules: how-to-create-modules.md
+  - Terminology: terminology.md
+
+theme:
+  name: material  # Doc: https://squidfunk.github.io/mkdocs-material/
+  palette:
+    scheme: slate
+    primary: teal
+    accent: yellow
+
+extra_css:
+  - css/mcbuddy.css
+
+# Ref: https://squidfunk.github.io/mkdocs-material/reference/abbreviations/
+# Ref: https://python-markdown.github.io/extensions/
+markdown_extensions:
+  - admonition
+  # - codehilite:
+  #     guess_lang: false
+  # - pymdownx.critic
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight
+  # - pymdownx.mark
+  # - pymdownx.superfences
+  # - toc:
+  #     permalink: true
+
+plugins:
+  - search
+
+# Relative to this file.
+docs_dir: ../docs
+site_dir: build

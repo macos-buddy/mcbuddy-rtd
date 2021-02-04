@@ -1,0 +1,32 @@
+:root {
+  --md-admonition-icon--mcbuddy: unset;
+}
+.md-typeset .admonition.mcbuddy,
+.md-typeset details.mcbuddy {
+  border-left-width: 0;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+.md-typeset .mcbuddy > .admonition-title,
+.md-typeset .mcbuddy > summary {
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem 1rem 1rem 3rem;
+}
+.md-typeset .mcbuddy > .admonition-title code {
+  font-size: inherit;
+  color: var(--md-accent-fg-color);
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+.md-typeset .mcbuddy > .admonition-title::before,
+.md-typeset .mcbuddy > summary::before {
+  background-color: transparent;
+  content: "😎";
+  font-size: 1.25rem;
+  left: 1rem;
+  line-height: 1.35;
+  -webkit-mask-image: unset;
+          mask-image: unset;
+}
